@@ -70,7 +70,7 @@ In total we have
 ```bash
 printf "\x00\x0a\x00\xff" | env $'\xde\xad\xbe\xef'=$'\xca\xfe\xba\xbe' ./input2 $(printf "a %.0s" {1..64}) $'\x00' $'\x20\x0a\x0d' "6666" $(printf "a %.0s" {68..99}) 2< <(echo -n -e "\x00\x0a\x02\xff")
 ```
-This time, we want to execute in the background tho, so we are able to send the message without interference, we achieve this by adding **&** at the end
+This time, we want to execute in the background though, so we are able to send the message without interference, we achieve this by adding **&** at the end
 ```bash
 printf "\x00\x0a\x00\xff" | env $'\xde\xad\xbe\xef'=$'\xca\xfe\xba\xbe' ./input2 $(printf "a %.0s" {1..64}) $'\x00' $'\x20\x0a\x0d' "6666" $(printf "a %.0s" {68..99}) 2< <(echo -n -e "\x00\x0a\x02\xff") &
 ```
