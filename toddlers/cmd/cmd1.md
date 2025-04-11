@@ -33,6 +33,6 @@ The flag of this level is the key to the next one, so we should keep it close.
 <details>
   <summary>Show flag</summary>
 
-	PATH\_environment?_Now_I_really_g3t_it,_mommy!
+	PATH_environment?_Now_I_really_g3t_it,_mommy!
 
 </details>
